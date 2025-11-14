@@ -47,6 +47,24 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 
+	<!-- Ajuste imágenes de proyectos para que se vean mejor -->
+	<style>
+		/* Hace que las imágenes usadas como background en los proyectos se vean completas
+		   y centradas, sin recortes raros en mobile. */
+		.wrapper.style2.spotlights .image {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		/* Le damos una altura mínima razonable en mobile para que no queden muy chatas */
+		@media screen and (max-width: 736px) {
+			.wrapper.style2.spotlights .image {
+				min-height: 260px;
+			}
+		}
+	</style>
+
 	<!-- Datos estructurados -->
 	<script type="application/ld+json">
   {
@@ -114,7 +132,7 @@
 					simples a problemas reales y sumar desde la comunicación, la docencia y el trabajo en equipo.
 				</p>
 				<ul class="actions">
-					<li><a href="Curriculum-German-Cavani-ENG.pdf"
+					<li><a href="./Curriculum-German-Cavani-ENG.pdf"
 							class="button primary icon solid fa-download">Descargar
 							CV</a>
 					</li>
@@ -134,9 +152,9 @@
 			<!-- Control de alumnos -->
 			<section>
 				<a href="lista-alumnos.html" class="image">
-					<img src="images/proyecto-alumnos-placeholder.jpg"
+					<img src="./images/control-alumnos.png"
 						alt="Interfaz de la aplicación de control de alumnos para escuelas de artes marciales"
-						data-position="center center" loading="lazy" />
+						data-position="center center" loading="lazy" decoding="async" />
 				</a>
 				<div class="content">
 					<div class="inner">
@@ -162,9 +180,9 @@
 			<!-- KwangGae App -->
 			<section>
 				<a href="https://www.kwanggae.com" target="_blank" rel="noopener noreferrer" class="image">
-					<img src="images/kwang-gae.png"
+					<img src="./images/kwang-gae.png"
 						alt="Captura de pantalla de KwangGae App para escuelas de artes marciales"
-						data-position="top center" loading="lazy" />
+						data-position="top center" loading="lazy" decoding="async" />
 				</a>
 				<div class="content">
 					<div class="inner">
@@ -196,8 +214,8 @@
 			<!-- Ayuda a Juan -->
 			<section>
 				<a href="https://help-juan.vercel.app/" target="_blank" rel="noopener noreferrer" class="image">
-					<img src="images/help-juan.png" alt="Pantalla principal de la aplicación Ayuda a Juan"
-						data-position="center center" loading="lazy" />
+					<img src="./images/help-juan.png" alt="Pantalla principal de la aplicación Ayuda a Juan"
+						data-position="center center" loading="lazy" decoding="async" />
 				</a>
 				<div class="content">
 					<div class="inner">
@@ -231,7 +249,7 @@
 					class="image">
 					<img src="images/proyecto-peliculas-placeholder.jpg"
 						alt="Listado de películas populares consumiendo la API de TMDb" data-position="25% 25%"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 				</a>
 				<div class="content">
 					<div class="inner">
