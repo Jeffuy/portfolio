@@ -65,10 +65,16 @@
 		var rect = target.getBoundingClientRect();
 		var targetY = rect.top + window.pageYOffset - offset;
 
-		window.scrollTo({
-			top: targetY,
-			behavior: 'smooth'
-		});
+		try {
+			// Navegadores modernos.
+			window.scrollTo({
+				top: targetY,
+				behavior: 'smooth'
+			});
+		} catch (e) {
+			// Fallback para navegadores que no soportan ScrollToOptions.
+			window.scrollTo(0, targetY);
+		}
 	}
 
 	// Sidebar.
@@ -152,6 +158,11 @@
 
 			sectionToLink.forEach(function (_link, section) {
 				sidebarObserver.observe(section);
+			});
+		} else if (sectionToLink.size > 0) {
+			// Fallback: sin IntersectionObserver, activamos todas las secciones.
+			sectionToLink.forEach(function (_link, section) {
+				section.classList.remove('inactive');
 			});
 		}
 	}
