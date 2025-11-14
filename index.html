@@ -4,23 +4,78 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="es">
 
 <head>
-	<title>Germán Cavani | Portafolio</title>
+	<title>Desarrollador Frontend en Montevideo | Germán Cavani</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Portafolio de Germán Cavani, desarrollador web Frontend en Montevideo. Experiencia en React, Next.js, JavaScript, HTML5, CSS, Firebase y Python." />
+	<meta name="author" content="Germán Cavani" />
+	<meta name="robots" content="index,follow" />
+	<link rel="canonical" href="https://www.gcavani.com/" />
+
+	<!-- Open Graph -->
+	<meta property="og:locale" content="es_UY" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Desarrollador Frontend en Montevideo | Germán Cavani" />
+	<meta property="og:description"
+		content="Descubrí los proyectos y habilidades de Germán Cavani, desarrollador web enfocado en educación y artes marciales." />
+	<meta property="og:url" content="https://www.gcavani.com/" />
+	<meta property="og:site_name" content="Portafolio de Germán Cavani" />
+	<meta property="og:image" content="https://www.gcavani.com/images/og-image.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Desarrollador Frontend en Montevideo | Germán Cavani" />
+	<meta name="twitter:description"
+		content="Portafolio de Germán Cavani, desarrollador web Frontend con experiencia en React, Next.js, JavaScript y Firebase." />
+	<meta name="twitter:image" content="https://www.gcavani.com/images/og-image.jpg" />
+
+	<!-- Favicon -->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<!-- Datos estructurados -->
+	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Germán Cavani",
+    "url": "https://www.gcavani.com/",
+    "image": "https://www.gcavani.com/images/profile.jpg",
+    "jobTitle": "Desarrollador Web Frontend",
+    "description": "Desarrollador web Frontend en Montevideo con experiencia en React, Next.js, JavaScript, HTML, CSS y Firebase.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UY",
+      "addressLocality": "Montevideo"
+    },
+    "sameAs": [
+      "https://github.com/Jeffuy",
+      "https://www.linkedin.com/in/german-c-b0b371218/",
+      "https://www.facebook.com/jeffuy123/"
+    ]
+  }
+  </script>
+
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-64Q87M0C63"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-64Q87M0C63');
 	</script>
 </head>
@@ -30,9 +85,9 @@
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
-			<nav>
+			<nav aria-label="Navegación principal">
 				<ul>
-					<li><a href="#intro">¿Quién Soy?</a></li>
+					<li><a href="#intro">¿Quién soy?</a></li>
 					<li><a href="#one">Mis proyectos</a></li>
 					<li><a href="#two">¿Por qué contratarme?</a></li>
 					<li><a href="#three">Contacto</a></li>
@@ -42,174 +97,305 @@
 	</section>
 
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<div id="wrapper" role="main">
 
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>Hola, soy Germán. Un entusiasta de la tecnología con conocimientos en <span
-						style="color: #ec77ca">React JS, NextJS, Javascript, HTML5, CSS, Firebase, Python y Git.</span>
-				</h1>
-				<p>Me dedico a desarrollar aplicaciones para facilitar el trabajo de profesores, estudiantes y
-					entrenadores; acercándolos a tecnologías que puedan brindar una mejor organización y una
-					optimización de resultados. Te invito a que pases por mi <a
-						href="https://jeffuy.github.io/">GitHub</a><br />
+				<h1>Hola, soy Germán Cavani.</h1>
+				<p>
+					Soy <strong>desarrollador web orientado al Front-End</strong>, con experiencia en
+					<span style="color:#ec77ca;">React, Next.js, JavaScript, HTML5, CSS y Firebase</span>.
+					Actualmente estudio <strong>Analista Programador</strong> en la Universidad ORT Uruguay y construyo
+					aplicaciones que conectan tecnología, educación y artes marciales.
+				</p>
+				<p>
+					Me interesa trabajar en equipos donde pueda seguir creciendo técnicamente, aportar soluciones
+					simples a problemas reales y sumar desde la comunicación, la docencia y el trabajo en equipo.
+				</p>
+				<ul class="actions">
+					<li><a href="CV_German_Cavani.pdf" class="button primary icon solid fa-download">Descargar CV</a>
+					</li>
+					<li>
+						<a href="https://github.com/Jeffuy" target="_blank" rel="noopener noreferrer"
+							class="button icon brands fa-github">
+							Ver GitHub
+						</a>
+					</li>
+				</ul>
 			</div>
 		</section>
 
-		<!-- One -->
+		<!-- One: Projects -->
 		<section id="one" class="wrapper style2 spotlights">
+
+			<!-- Control de alumnos -->
 			<section>
-				<a href="lista-alumnos.html" class="image"><img src="images/pic01.jpg" alt=""
-						data-position="center center" /></a>
+				<a href="lista-alumnos.html" class="image">
+					<img src="images/proyecto-alumnos-placeholder.jpg"
+						alt="Interfaz de la aplicación de control de alumnos para escuelas de artes marciales"
+						data-position="center center" loading="lazy" />
+				</a>
 				<div class="content">
 					<div class="inner">
 						<h2>Control de alumnos en escuelas de Artes Marciales</h2>
-						<p>Interfaz gráfica creada en python utilizando las librerías Tkinter, Matplotlib, sqlite3 y
-							pandas. En este proyecto los instructores pueden registrar a sus alumnos y tener varias
-							estadísticas en tiempo real.</p>
+						<p>
+							Aplicación de escritorio desarrollada en <strong>Python</strong> utilizando
+							<strong>Tkinter, SQLite, Matplotlib y pandas</strong>. Permite a los instructores registrar
+							alumnos, cuotas y asistencia, y visualizar <strong>estadísticas en tiempo real</strong>
+							sobre
+							crecimiento, retención y rendimiento del gimnasio.
+						</p>
+						<p>
+							Nació de una necesidad real en mi propia escuela de Taekwon-Do y se convirtió en una
+							herramienta de apoyo para tomar decisiones basadas en datos, no solo en intuición.
+						</p>
 						<ul class="actions">
-							<li><a href="lista-alumnos.html" class="button">Ver</a></li>
+							<li><a href="lista-alumnos.html" class="button">Ver detalles</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
+			<!-- KwangGae App -->
 			<section>
-				<a target="_blank" href="https://www.kwanggae.com" class="image"><img src="images/kwanggae.png"
-						alt="" data-position="top center" /></a>
+				<a href="https://www.kwanggae.com" target="_blank" rel="noopener noreferrer" class="image">
+					<img src="images/proyecto-kwanggae-placeholder.jpg"
+						alt="Captura de pantalla de KwangGae App para escuelas de artes marciales"
+						data-position="top center" loading="lazy" />
+				</a>
 				<div class="content">
 					<div class="inner">
 						<h2>KwangGae App</h2>
-						<p>Desarrollada en NextJS, esta aplicación tiene múltiples usos a la hora de enseñar artes
-							marciales. Se puede puntuar enfrentamientos, crear desafíos para los alumnos y realizar
-							juegos con los más chicos. A su vez genera cuestionarios para utilizar en los examenes. Ya
-							se ha usado en cursos y competencias.</p>
 						<p>
-							En la última versión se incorporó el albúm de figuritas online utilizado para recompensar el trabajo en clase de los alumnos, que pueden coleccionarlas e intercambiarlas entre ellos. Para el backend se utilizó Firebase.
+							Aplicación web desarrollada en <strong>Next.js</strong> con backend en
+							<strong>Firebase</strong>, pensada para escuelas de artes marciales. Permite
+							<strong>puntuar enfrentamientos</strong>, crear <strong>desafíos gamificados</strong>,
+							generar <strong>juegos interactivos</strong> para los más chicos y armar
+							<strong>cuestionarios</strong> para exámenes.
+						</p>
+						<p>
+							En su última versión incorporé un <strong>álbum de figuritas online</strong> para
+							recompensar el trabajo en clase: los alumnos pueden ganar, coleccionar e intercambiar
+							figuritas según su esfuerzo. La app ya se ha utilizado en cursos, exámenes y competencias.
 						</p>
 						<ul class="actions">
-							<li><a target="_blank" href="https://www.kwanggae.com" class="button">Ver app</a></li>
+							<li>
+								<a href="https://www.kwanggae.com" target="_blank" rel="noopener noreferrer"
+									class="button">
+									Ver app
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
+			<!-- Ayuda a Juan -->
 			<section>
-				<a target="_blank" href="https://jeffuy.github.io/popularmovies/" class="image"><img
-						src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+				<a href="https://help-juan.vercel.app/" target="_blank" rel="noopener noreferrer" class="image">
+					<img src="images/proyecto-ayuda-juan-placeholder.jpg"
+						alt="Pantalla principal de la aplicación Ayuda a Juan" data-position="center center"
+						loading="lazy" />
+				</a>
+				<div class="content">
+					<div class="inner">
+						<h2>Ayuda a Juan</h2>
+						<p>
+							Aplicación web interactiva pensada para trabajar <strong>empatía y habilidades
+								socioemocionales</strong> con niños. El usuario elige un escenario (por ejemplo, leer un
+							poema frente a la clase) y debe escribir mensajes de apoyo para ayudar a Juan a sentirse más
+							seguro.
+						</p>
+						<p>
+							Diseñé y desarrollé esta app sin IA, desde la idea hasta la implementación, con foco en un
+							flujo simple para que puedan usarla docentes y alumnos sin explicación previa. Incluye
+							contador de mensajes, reinicio de juego y opciones para compartir.
+						</p>
+						<ul class="actions">
+							<li>
+								<a href="https://help-juan.vercel.app/" target="_blank" rel="noopener noreferrer"
+									class="button">
+									Probar app
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Películas populares -->
+			<section>
+				<a href="https://jeffuy.github.io/popularmovies/" target="_blank" rel="noopener noreferrer"
+					class="image">
+					<img src="images/proyecto-peliculas-placeholder.jpg"
+						alt="Listado de películas populares consumiendo la API de TMDb" data-position="25% 25%"
+						loading="lazy" />
+				</a>
 				<div class="content">
 					<div class="inner">
 						<h2>Películas populares</h2>
-						<p>Consumiendo la API de Movie Db, muestra la lista de las películas más populares del momento.
-							Se actualiza diariamente. Hecha con JS, HTML5 y CSS</p>
+						<p>
+							Sitio web desarrollado con <strong>JavaScript, HTML5 y CSS</strong> que consume la API de
+							<strong>The Movie Database (TMDb)</strong> para mostrar una lista actualizada de las
+							películas más populares del momento.
+						</p>
+						<p>
+							Este proyecto me sirvió para practicar consumo de <strong>APIs REST</strong>, manejo de
+							estados de carga y error, y maquetado <strong>responsive</strong> sin utilizar frameworks.
+						</p>
 						<ul class="actions">
-							<li><a target="_blank" href="https://jeffuy.github.io/popularmovies/" class="button">Ver
-									sitio</a></li>
+							<li>
+								<a href="https://jeffuy.github.io/popularmovies/" target="_blank"
+									rel="noopener noreferrer" class="button">
+									Visitar sitio
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
 		</section>
 
-		<!-- Two -->
+		<!-- Two: Why me -->
 		<section id="two" class="wrapper style3 fade-up">
 			<div class="inner">
 				<h2>¿Qué puedo aportar?</h2>
-				<br>
+				<p>
+					Mi perfil combina experiencia en docencia, deportes de alto rendimiento y desarrollo de software.
+					No solo programo: también estoy acostumbrado a liderar grupos, enseñar y comunicar ideas de forma
+					clara.
+				</p>
 				<div class="features">
 					<section>
 						<span class="icon major fa-gem"></span>
 						<h3>Dedicación</h3>
-						<br>
-						<p>Desde hace más quince años dirijo una escuela de Taekwon-Do con más de 60 alumnos, algunos de
-							ellos hoy instructores. Ayudámos a la formación de las personas y hemos logrado títulos
-							nacionales, regionales, europeos y en el 2021 conseguimos, junto a un alumno, el primer
-							título mundial de Taekwon-Do I.T.F. para Uruguay.</p>
+						<p>
+							Desde hace más de <strong>quince años</strong> dirijo una escuela de Taekwon-Do con más de
+							60 alumnos, algunos hoy instructores. Acompañamos procesos de formación personal y deportiva
+							y hemos logrado títulos nacionales, regionales, europeos y, en 2021, el
+							<strong>primer título mundial de Taekwon-Do I.T.F. para Uruguay</strong> junto a un alumno.
+						</p>
 					</section>
+
 					<section>
 						<span class="icon solid major fa-language"></span>
 						<h3>Idiomas</h3>
-						<br>
 						<ul>
 							<li>Español nativo</li>
-							<li>Inglés avanzado - Dickens</li>
-							<li>Italiano básico - Istituto Italiano di Cultura</li>
+							<li>Inglés avanzado - Dickens y Platzi English Academy</li>
+							<li>Italiano básico/intermedio - Istituto Italiano di Cultura</li>
 						</ul>
-						<p>He trabajado como traductor en cursos internacionales y puesto a prueba mis conocimientos
-							tanto en Italia como en Estados Unidos.</p>
+						<p>
+							He trabajado como traductor en cursos internacionales y puesto a prueba mis idiomas en
+							eventos y viajes a <strong>Italia</strong> y <strong>Estados Unidos</strong>.
+						</p>
 					</section>
+
 					<section>
 						<span class="icon solid major fa-comments"></span>
 						<h3>Comunicación</h3>
-						<br>
-						<p>He realizado el curso de oratoria en el Insitituto PalabrArt y dictado cursos para
-							instructores y practicantes deportivos en Montevideo, Salto, Tacuarembó y San José. </p>
+						<p>
+							Realicé el curso de oratoria en el <strong>Instituto PalabrArt</strong> y he dictado cursos
+							para instructores y practicantes deportivos en Montevideo, Salto, Tacuarembó y San José.
+							Estoy acostumbrado a explicar conceptos complejos de forma simple y a hablar en público.
+						</p>
 					</section>
+
 					<section>
 						<span class="icon solid major fa-users"></span>
 						<h3>Trabajo en equipo</h3>
-						<br>
-						<p>Gracias a la participación en varios equipos de trabajo, puedo entender los roles de cada
-							persona en un equipo y aportar para el logro de objetivos desde el rol que me corresponda.
+						<p>
+							La experiencia coordinando entrenamientos, exámenes y competencias me enseñó a entender los
+							distintos roles dentro de un equipo y a aportar desde donde toque: organizando, ejecutando,
+							comunicando o apoyando a otros.
 						</p>
 					</section>
+
 					<section>
 						<span class="icon solid major fa-book-open"></span>
-						<h3>Blogs</h3>
-						<br>
-						<p>La pasión por los libros, especialmente sobre historia, me llevó a crear un blog para la
-							difusión de estos contenidos. En él escribí como aficionado durante más de dos años, y
-							continúo haciéndolo ocasionalmente. Pueden verlo haciendo <a target="_blank"
-								href="https://www.gladiador.net/">click aquí.</a> </p>
+						<h3>Blog y escritura</h3>
+						<p>
+							La pasión por la historia y la lectura me llevó a crear un blog personal donde escribí
+							reseñas y artículos durante más de dos años. Podés verlo haciendo
+							<a href="https://www.gladiador.net/" target="_blank" rel="noopener noreferrer">
+								click aquí
+							</a>.
+							Esta experiencia me ayuda a redactar documentación y contenido claro para usuarios.
+						</p>
 					</section>
+
 					<section>
 						<span class="icon solid major fa-link"></span>
 						<h3>Desarrollo constante</h3>
-						<br>
-						<p>Actualmente poseo conocimientos en Python, React JS, Css y HTML. Mi objetivo es continuar
-							desarrollándome en las áreas de la tecnología y utilizar estas herramientas para ayudar a
-							las personas, en especial en la educación.</p>
+						<p>
+							Estoy cursando la carrera de <strong>Analista Programador</strong> en ORT Uruguay y
+							complemento mi formación con programas online en <strong>Platzi</strong> y
+							<strong>Udemy</strong>, donde completé más de <strong>200 cursos</strong> centrados en
+							desarrollo web, JavaScript, React y buenas prácticas de ingeniería de software.
+						</p>
+						<p>
+							Manejo <strong>Python, JavaScript, React, Next.js, HTML, CSS y Firebase</strong> y mi
+							objetivo
+							es seguir creciendo como desarrollador, especialmente en proyectos que conecten tecnología y
+							educación.
+						</p>
 					</section>
 				</div>
 			</div>
 		</section>
 
-		<!-- Three -->
+		<!-- Three: Contact -->
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Contacto</h2>
-				<p>Si crees que puedo ser de utilidad para tu empresa o quipo de trabajo puedes enviarme un mensaje, ya
-					sea por alguna consulta o para coordinar una reunión.</p>
+				<p>
+					Si creés que puedo aportar a tu empresa o equipo de trabajo, escribime para coordinar una reunión o
+					contarme qué están buscando. Estoy abierto a posiciones <strong>junior/trainee en
+						desarrollo web o Front-End</strong>, en modalidad híbrida o remota.
+				</p>
 
 				<div class="split style2">
 					<section>
 						<ul class="contact">
 							<li>
 								<h3>País</h3>
-								<span>Uruguay
-								</span>
+								<span>Uruguay</span>
 							</li>
 							<li>
 								<h3>Ciudad</h3>
-								<span>Montevideo
-								</span>
+								<span>Montevideo</span>
 							</li>
+						</ul>
 					</section>
+
 					<section>
 						<ul class="contact">
 							<li>
 								<h3>Email</h3>
-								<a href="mailto:jefffreelance3@gmail.com">gcavaniuy@gmail.com</a>
+								<a href="mailto:gcavaniuy@gmail.com">gcavaniuy@gmail.com</a>
 							</li>
 							<li>
 								<h3>Social</h3>
 								<ul class="icons">
-									<li><a target="_blank" href="https://www.facebook.com/jeffuy123/"
-											class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+									<li>
+										<a href="https://www.facebook.com/jeffuy123/" target="_blank"
+											rel="noopener noreferrer" class="icon brands fa-facebook-f">
+											<span class="label">Facebook</span>
+										</a>
 									</li>
-									<li><a target="_blank" href="https://github.com/Jeffuy"
-											class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a target="_blank" href="https://www.linkedin.com/in/german-c-b0b371218/"
-											class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+									<li>
+										<a href="https://github.com/Jeffuy" target="_blank" rel="noopener noreferrer"
+											class="icon brands fa-github">
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/german-c-b0b371218/" target="_blank"
+											rel="noopener noreferrer" class="icon brands fa-linkedin-in">
+											<span class="label">LinkedIn</span>
+										</a>
 									</li>
 								</ul>
 							</li>
@@ -226,15 +412,17 @@
 		<div class="inner">
 			<ul class="menu">
 				<li>&copy; Germán Cavani. All rights reserved.</li>
-				<li>Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+				<li>
+					Design:
+					<a href="http://html5up.net" target="_blank" rel="noopener noreferrer">
+						HTML5 UP
+					</a>
+				</li>
 			</ul>
 		</div>
 	</footer>
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
