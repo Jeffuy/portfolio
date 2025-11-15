@@ -120,7 +120,10 @@
 			if (!section) return;
 
 			// Inicialmente inactiva (como initialize de Scrollex).
-			section.classList.add('inactive');
+			if (!section.id || section.id !== 'two') {
+				section.classList.add('inactive');
+			}
+
 			sectionToLink.set(section, link);
 		});
 

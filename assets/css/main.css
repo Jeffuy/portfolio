@@ -4021,11 +4021,6 @@ body.is-preload #sidebar nav ul li {
 	#intro p {
 		font-size: 1em;
 	}
-
-	#two.wrapper.fade-up>.inner {
-		opacity: 1 !important;
-		transform: none !important;
-	}
 }
 
 
@@ -4037,4 +4032,9 @@ body.is-preload #sidebar nav ul li {
 		background-attachment: scroll;
 	}
 
+}
+
+#two .features.inactive section .icon {
+	transform: scale(1) !important;
+	opacity: 1 !important;
 }
